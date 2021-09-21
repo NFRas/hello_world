@@ -2,7 +2,7 @@
 function registername() {
     let a = localStorage.getItem('fullname')
     if (a == 0 || a == null || a == undefined) {
-        window.open( "file:///Users/nrasoulipour/Documents/Codes%20for%20programming/Assignments/1st%20-%20CSS%20Demo%20template/demo.html", '_blank');
+        window.open( "../1st-CSS-Demo-template/demo.html", '_blank');
         return true
     }
     else {
@@ -14,7 +14,7 @@ registername()
 
 function clearall () {
     let  = localStorage.clear();
-    window.open( "file:///Users/nrasoulipour/Documents/Codes%20for%20programming/Assignments/1st%20-%20CSS%20Demo%20template/demo.html", '_blank')
+    window.open( "../1st-CSS-Demo-template/demo.html", '_blank')
 }
 
 //this can be used for the purpose of writing the username on top as well just with the condition of 
