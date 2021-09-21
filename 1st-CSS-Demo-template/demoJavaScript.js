@@ -20,7 +20,7 @@ function registerResults(a, b, c, d) {
   let op = document.getElementById('option');
   localStorage.setItem( 'option', op.value);
 
-    window.open( "file:///Users/nrasoulipour/Documents/Codes%20for%20programming/Assignments/2nd%20-%20Bootstrap%20demo%20template/BOOTSTRAPdemo.html", '_blank');
+    window.open( "../2nd-Bootstrap-demo-template/demoJSforBtS.js");
      }; 
 }
 
