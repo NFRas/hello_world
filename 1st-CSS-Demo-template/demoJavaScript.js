@@ -21,7 +21,7 @@ function registerResults(a, b, c, d) {
   localStorage.setItem( 'option', op.value);
 
     window.open( "../2nd-Bootstrap-demo-template/BOOTSTRAPdemo.html", "_self");
-     }; 
+    }; 
 }
 
 
