@@ -9,6 +9,8 @@ function registername() {
     }
 };
 
+registername()
+
 function clearall () {
     localStorage.clear();
     opentab()
@@ -18,7 +20,7 @@ function opentab () {
     window.open("../1st-CSS-Demo-template/demo.html", "_self");
 }
 
-//createing an opject with all the inputs
+//createing an object with all the inputs
 let user = {
     name: document.getElementById('fullname'),
     emails:[document.getElementById( 'email1'), document.getElementById('email2')],
