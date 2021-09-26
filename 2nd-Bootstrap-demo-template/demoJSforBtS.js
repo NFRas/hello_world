@@ -20,6 +20,7 @@ function opentab () {
     window.open("../1st-CSS-Demo-template/demo.html", "_self");
 }
 
+
 //createing an object with all the inputs
 let user = {
     name: document.getElementById('fullname'),
