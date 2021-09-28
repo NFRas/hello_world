@@ -20,8 +20,14 @@ function opentab () {
     window.open("../1st-CSS-Demo-template/demo.html", "_self");
 }
 
+function opentab2 () {
+    window.open("Listpage.html", "_self");
+  }
+  
+opentab2();
 
-//createing an object with all the inputs
+
+//createing an object with all the inputs X DOES NOT WORK X
 let user = {
     name: document.getElementById('fullname'),
     emails:[document.getElementById( 'email1'), document.getElementById('email2')],
