@@ -1,10 +1,6 @@
 
-function opentab () {
+function opentab2 () {
     window.open("Listpage.html", "_self");
   }
   
-function order() {
-    opentab();
-}
-
-order();
+opentab2();
