@@ -11,13 +11,24 @@ async function getUsers() {
 
 async function renderUsers() {
   let users = await getUsers()
-
+  let html = '';
   users.forEach( user => {
     let htmlSegment = `<h2> ${user.login}<h2>s`;
-    
-  document.write(htmlSegment);
+
+    return html += htmlSegment;
   });
- 
+
+document.write(html);
 }
 
 renderUsers();
+
+
+
+//for the second page that opens contact informations maybe?
+// let container = document.querySelector('.container');
+  // container.innerHTML = html;
+
+    
+  
+ 

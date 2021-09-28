@@ -24,7 +24,6 @@ function opentab2 () {
     window.open("Listpage.html", "_self");
   }
   
-opentab2();
 
 
 //createing an object with all the inputs X DOES NOT WORK X
