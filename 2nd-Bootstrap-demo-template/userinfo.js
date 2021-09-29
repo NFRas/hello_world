@@ -5,24 +5,21 @@ const params = new URLSearchParams(window.location.search);
 
 user = params.get('user');
 
+userInfo = {}
+
 // console.log(params);
   
   async function userinfo() {
    let url = `https://api.github.com/users/${user}`;
    try {
        let result = await fetch(url);
-       console.log(result.json());
-
-   } catch (err) {
+       let userInfo =  await result.json();
+       document.write(`<h2> Login: ${userInfo.login}</h2> <br> 
+                        <strong> Site Admin:</strong> ${userInfo.id}<br> 
+                        <strong> Node Id: </strong> ${userInfo.node_id}`) ;
+    } catch (err) {
    console.log(err);
    }
-
-   let profile = {result};
-   document.write(profile);
-
    }
 
-  
-
-  
   userinfo();
