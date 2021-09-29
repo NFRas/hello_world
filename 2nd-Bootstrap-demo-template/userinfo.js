@@ -1,16 +1,28 @@
 //in this page i shoudl use the param query stuff
 //this page opens after clicking every user
 
-let user = getElement
+const params = new URLSearchParams(window.location.search);
+
+user = params.get('user');
+
+// console.log(params);
   
-  async function userinfo(x) {
-   let url = `https://api.github.com/users/?login=${user}`;
+  async function userinfo() {
+   let url = `https://api.github.com/users/${user}`;
    try {
-       let profile = await fetch(url);
-       return await profile.json();
+       let result = await fetch(url);
+       console.log(result.json());
+
    } catch (err) {
    console.log(err);
    }
-  }
+
+   let profile = {result};
+   document.write(profile);
+
+   }
+
+  
+
   
   userinfo();
