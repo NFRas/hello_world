@@ -20,7 +20,7 @@ function registerResults(a, b, c, d) {
   let op = document.getElementById('option');
   localStorage.setItem( 'option', op.value);
 
-    window.open( "../2nd-Bootstrap-demo-template/BOOTSTRAPdemo.html", "_self");
+    window.open( "../Homepage-Bootstrap/homepage.html", "_self");
     }; 
 }
 

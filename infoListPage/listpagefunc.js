@@ -13,7 +13,7 @@ async function renderUsers() {
   let users = await getUsers()
   let html = '';
   users.forEach( user => {
-    let htmlSegment = `<a href="userinfo.html?user=${user.login}">${user.login}</a> <br>`;
+    let htmlSegment = `<a href="../user-profile/userinfo.html?user=${user.login}">${user.login}</a> <br>`;
 
     return html += htmlSegment;
   });

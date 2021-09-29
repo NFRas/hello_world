@@ -17,11 +17,11 @@ function clearall () {
 }
 
 function opentab () {
-    window.open("../1st-CSS-Demo-template/demo.html", "_self");
+    window.open("../loginPage-Landing/login.html", "_self");
 }
 
 function opentab2 () {
-    window.open("Listpage.html", "_self");
+    window.open("../infoListPage/Listpage.html", "_self");
   }
   
 
