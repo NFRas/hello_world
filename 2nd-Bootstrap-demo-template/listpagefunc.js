@@ -14,7 +14,6 @@ async function renderUsers() {
   let html = '';
   users.forEach( user => {
     let htmlSegment = `<a href="userinfo.html?user=${user.login}">${user.login}</a> <br>`;
-    window.localStorage.setItem("user": htmlSegment);
 
     return html += htmlSegment;
   });
@@ -23,12 +22,6 @@ document.write(html);
 }
 
 renderUsers();
-
-function openusers(){
-  window.open(" ", "_self")
-}
-
-
 
 //for the second page that opens contact informations maybe?
 // let container = document.querySelector('.container');
