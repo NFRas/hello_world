@@ -14,7 +14,7 @@ userInfo = {}
    try {
        let result = await fetch(url);
        let userInfo =  await result.json();
-       document.write(`<h2> Login: ${userInfo.login}</h2> <br> 
+       document.write(`<h3> Login: ${userInfo.login}</h3> <br> 
                         <strong> Site Admin:</strong> ${userInfo.id}<br> 
                         <strong> Node Id: </strong> ${userInfo.node_id}`) ;
     } catch (err) {
